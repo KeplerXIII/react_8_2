@@ -8,7 +8,6 @@ export const UseFetchTst = () => {
   const [selectedOption, setSelectedOption] = useState('')
 
   const { data, isLoading, hasError } = useFetch<Data>(apiUrl, selectedOption)
-  console.log(data, isLoading, hasError)
 
   return (
     <>
